@@ -40,23 +40,23 @@ if age>=18:
             for questions in ques:
                 print("****************************")
                 print(questions)
-            for options in opt[ques_no]:
-                print(options)
+                for options in opt[ques_no]:
+                    print(options)
     
 
-            guess=input("Enter A, B, C, D: ") 
-            guesses.append(guess)
-            if guess == ans[ques_no]:
-                score+=1
-                print("your answer is correct!")
+                guess=input("Enter A, B, C, D: ") 
+                guesses.append(guess)
+                if guess == ans[ques_no]:
+                    score+=1
+                    print("your answer is correct!")
           
-                print("your score is", score)
+                    print("your score is", score)
           
             
-            else:
-                print("your answer is Incorrect!")   
-            ques_no+=1
-            print("your total score is", score,"out of 6")
+                else:
+                    print("your answer is Incorrect!")   
+                ques_no+=1
+                print("your total score is", score,"out of 6")
             
             
         else:
